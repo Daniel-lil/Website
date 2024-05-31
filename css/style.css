@@ -7,11 +7,10 @@ using the CSS Grid.
 
 **********************************************/
 
-html, body {
+html {
   background-color: #000000;/* sets starting font background colour */
-  padding-top: 0vh;
+  padding-top: 150vh;
   margin: 0;
-  position: fixed;
   display: grid; /* Set up the grid and justify/align to center */
   justify-content: center;
   align-content: center;
