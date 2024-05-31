@@ -7,13 +7,14 @@ using the CSS Grid.
 
 **********************************************/
 
-body {
+html, body {
   background-color: #000000;/* sets starting font background colour */
-  padding-top: 150vh;
+  padding-top: 0vh;
   margin: 0;
+  position: fixed;
   display: grid; /* Set up the grid and justify/align to center */
   justify-content: center;
   align-content: center;
   height: 100vh; /* Body is the height of the viewport */
-  overflow: visible; /* Hide anything that goes off the window size */
+  overflow: auto; /* Hide anything that goes off the window size */
 }
