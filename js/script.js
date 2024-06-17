@@ -299,11 +299,6 @@ function windowResized(){
 function mousePressed() {
 }
 
-function touchMoved() {
-  // prevent the display from moving around when you touch it
-  return false;
-}
-
 //checks mousepressing for site
 function mouseReleased() {
   console.log(screenPushAmount);
