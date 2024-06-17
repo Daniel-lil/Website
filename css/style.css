@@ -9,11 +9,11 @@ using the CSS Grid.
 
 html {
   background-color: #000000;/* sets starting font background colour */
-  padding-top: 0vh;
+  padding-top: 0dvh;
   margin: 0;
   display: grid; /* Set up the grid and justify/align to center */
   justify-content: center;
   align-content: center;
-  height: 400vh; /* Body is the height of the viewport */
+  height: 400dvh; /* Body is the height of the viewport */
   overflow: auto; /* Hide anything that goes off the window size */
 }
