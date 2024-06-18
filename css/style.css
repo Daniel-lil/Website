@@ -1,0 +1,34 @@
+/*********************************************
+
+Here is a description of any special CSS used.
+In this case it's just padding and margin to 0
+and then centring the canvas (and anything else)
+using the CSS Grid.
+
+**********************************************/
+
+html {
+  background-color: #000000;/* sets starting font background colour */
+  padding-top: 0dvh;
+  margin: 0;
+  display: grid; /* Set up the grid and justify/align to center */
+  justify-content: center;
+  align-content: center;
+  height: 400dvh; /* Body is the height of the viewport */
+  overflow: auto; /* Hide anything that goes off the window size */
+}
+
+
+/*
+.videos{
+  z-index: 1;
+}
+
+.scripts{
+  z-index: 0;
+}
+
+.menu{
+  z-index: 2;
+}
+  */
