@@ -335,13 +335,13 @@ setTimeout(() => {
         if (mouseY > 42   && mouseY < 90  && menuToggle != 1) {
           setTimeout(() => {
           menuToggle = 1;
-          }, 175)
+          }, 225)
  } 
         else if (mouseX < menuButtonX +125 && mouseX > menuButtonX) {
         if (mouseY > 42  && mouseY < 79  && menuToggle === 1) {
           setTimeout(() => {
             menuToggle = 0;
-            }, 175)
+            }, 225)
         }
       }
     } 
