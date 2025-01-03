@@ -229,6 +229,7 @@ function setup() {
   centreCanvas();
   cnv.style('display', 'block');
   cnv.style('align-content: center');
+  cnv.style('top', '0'); // Position at the top of the viewport
 
   buttonPlacement();
 }
