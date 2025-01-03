@@ -2,9 +2,18 @@ class Drawing {
   constructor() {}
 
   displayDrawing() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     //defines fade in preset to put into alpha
     background(0);
     
+    push();
+    fill(0);
+    stroke(255, 255, 255,80);
+    textSize(width/8);
+    text(`Drawing Page`, width/2, height/8 -width/12);
+    text(`Coming Soon`, width/2, height/8+ width/12);
+    pop();
+
         textFont(oldEnglish);
         textSize(65 + nameSizeBoost);
         textAlign(CENTER);
@@ -22,13 +31,6 @@ class Drawing {
         text(`_`, menuButtonX, 35 );
         text(`_`, menuButtonX, 55 );
         text(`_`, menuButtonX, 75 );
-
-        push();
-        fill(0);
-        stroke(255, 255, 255,80);
-        textSize(width/8);
-        text(`Drawing Page`, width/2, height/8 );
-        pop();
 
         if (mouseX > 10 && mouseX < 310 && mouseY > 35  && mouseY < 90 ) {
           if (mouseX > width - 25 || mouseX < menuDetectx ||mouseY < 42  || mouseY > menuDetecty ) {

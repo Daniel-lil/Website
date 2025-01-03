@@ -2,6 +2,7 @@ class Contact {
   constructor() {}
 
   displayContact() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     //defines fade in preset to put into alpha
     push();
     background(0);

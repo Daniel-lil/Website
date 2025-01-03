@@ -2,15 +2,19 @@ class Video {
   constructor() {}
 
   displayVideo() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     //defines fade in preset to put into alpha
     background(0);
 
 melancholy.show();
+//iframe1.removeAttribute("hidden");
+iframe1.show();
+
     video2.removeAttribute("hidden");
-    video3.removeAttribute("hidden");
-    video4.removeAttribute("hidden");
-    video5.removeAttribute("hidden");
-    video6.removeAttribute("hidden");
+    //video3.removeAttribute("hidden");
+    //video4.removeAttribute("hidden");
+    //video5.removeAttribute("hidden");
+    //video6.removeAttribute("hidden");
 
 
     /**
@@ -93,26 +97,26 @@ image(vimeoLogo, width/2 - 100, 220 ,100,100);
       text(`Gate of Horn and Ivory
 (2024)`, width/2, 800 );
    
-      video3.show();
-      video3.position(width/2 - 150, 870);
+  //    video3.show();
+   //   video3.position(width/2 - 150, 870);
   
       text(`Time
 (2023)`, width/2, 1050 );
   
-      video4.show();
-      video4.position(width/2 - 150, 1120);
+   //   video4.show();
+    //  video4.position(width/2 - 150, 1120);
   
       text(`Clocks
 (2023)`, width/2, 1300 );
   
-      video5.show();
-      video5.position(width/2 - 150, 1370);
+   //   video5.show();
+    //  video5.position(width/2 - 150, 1370);
   
       text(`Know Myself
 (2022)`, width/2, 1550 );
   
-      video6.show();
-      video6.position(width/2 - 150, 1620);
+   //   video6.show();
+    //  video6.position(width/2 - 150, 1620);
   
       text(`Melancholy Daydreams
 (2021)`, width/2, 1800 );

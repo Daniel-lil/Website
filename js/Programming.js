@@ -2,6 +2,7 @@ class Programming {
   constructor() {}
 
   displayProgramming() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     push();
     background(0);
     imageMode(CENTER)

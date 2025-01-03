@@ -141,6 +141,11 @@ let video4;
 let video5;
 let video6;
 
+//declaring name for video links <iframe>
+let iframe1;
+
+
+
 /**
 preloading images/songs
 */
@@ -169,6 +174,8 @@ videoButtonImg = loadImage('assets/images/videoButtonImg.jpg');
   spiralCursor = 'assets/images/spiralCursor.png';
 
   oldEnglish = loadFont('assets/fonts/OldeEnglish.ttf');
+
+
 }
 
 /**
@@ -203,11 +210,14 @@ function setup() {
     createMetaTag();
 
     melancholy = select("#melancholy");
+    
     video2 = select("#video2");
     video3 = select("#video3");
     video4 = select("#video4");
     video5 = select("#video5");
     video6 = select("#video6");
+
+    iframe1 = select("#iframe1");
 
     menuToggle = 0;
     nameSizeBoost = 0;
@@ -288,6 +298,10 @@ function draw() {
 }
 
 function windowResized(){
+  let dpr = window.devicePixelRatio;
+  onresize = e => {
+    if(window.devicePixelRatio !== dpr){
+
   resizeCanvas(window.innerWidth, window.innerHeight*4);
   centreCanvas();
 
@@ -298,13 +312,15 @@ function windowResized(){
   titleX = width/2;
   titleY = height/16;
 
-  cvX = width/2;
-  cvY = height/32;
+  //cvX = width/2;
+  //cvY = height/32;
 
   menudetectx1 = width - 122;
   menudetectx2 = width - 273;
 
   buttonPlacement();
+}
+}
 } 
                 
 
@@ -401,12 +417,19 @@ function removeLinks(){
 }
 
 function removeYoutubeLinks(){
-  melancholy.hide();
+ melancholy.hide();
+ iframe1.hide();
   video2.hide();
-  video3.hide();
-  video4.hide();
-  video5.hide();
-  video6.hide();
+ // video3.hide();
+ // video4.hide();
+ // video5.hide();
+ // video6.hide();
+
+
+ //pause();
+  //iframe.videoPause();
+  //iframe1 = document.getElementById("iframe1");
+  //iframe1.videoPause();
 }
 
 function centreCanvas(){
@@ -451,4 +474,9 @@ function buttonPlacement(){
     buttonSizeX = [width/7*3.2]*[1.8];
     buttonSizeY = [width/8]*[1.8];
       }
+}
+
+function pause() {
+  let videoPause = document.getElementById("iframe1")
+  videoPause.contentWindow.postMessage( '{"event":"command", "func":"pauseVideo", "args":""}', '*');
 }

@@ -2,6 +2,7 @@ class Title {
   constructor() {}
 
   displayTitle() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     titleX = width/2;
     titleY = height/8;
 

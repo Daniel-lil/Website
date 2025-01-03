@@ -2,6 +2,7 @@ class Music {
   constructor() {}
 
   displayMusic() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     background(0);
 
             textFont(oldEnglish);

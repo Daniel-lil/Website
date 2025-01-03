@@ -2,6 +2,7 @@ class CV {
   constructor() {}
 
   displayCV() {
+    cnv.style('top', '0'); // Position at the top of the viewport
     cvX = width/2;
     cvY = height/32;
 

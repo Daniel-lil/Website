@@ -24,6 +24,14 @@ href="/assets/images/spiralCursor.png">
     <!--border: 0;-->
    <!-- outline: 0;-->
    <!-- background-color: #000000;-->
+    
+   <style>
+    button {
+       height: 30px;
+       width: 80px;
+       background-color: aqua;
+    }
+ </style>
 
     <!-- Library script(s) -->
     <script src="js/libraries/p5.min.js"></script>
@@ -56,13 +64,12 @@ href="/assets/images/spiralCursor.png">
 
   <div
     class="menu">
-
   </div>
-
   </head>
-
   <body>
     <!-- HTML would go here if needed. -->
+
+
     <div 
     class="videos"
     hidden="hidden" 
@@ -71,63 +78,74 @@ href="/assets/images/spiralCursor.png">
 padding: 0;
 border: 0;
 outline: 0;>
-      <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
 
+      <iframe id="iframe1" src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP?enablejsapi=1" enablejsapi="1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+        <button onclick = "stop()"> stop </button>
+        <button onclick = "pause()"> pause </button>
+
+   
         <div
         class="videos"
         hidden="hidden" 
         id="video2"
+        enablejsapi=1;
         margin: 0;
     padding: 0;
     border: 0;
     outline: 0;>
-          <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-
+     <!-- 
             <div 
             class="videos"
             hidden="hidden" 
             id="video3"
+            enablejsapi=1;
             margin: 0;
         padding: 0;
         border: 0;
         outline: 0;>
-              <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <div 
                 class="videos"
                 hidden="hidden" 
                 id="video4"
+                enablejsapi=1;
                 margin: 0;
             padding: 0;
             border: 0;
             outline: 0;>
-                  <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
                     <div 
                     class="videos"
                     hidden="hidden" 
                     id="video5"
+                    enablejsapi=1;
                     margin: 0;
                 padding: 0;
                 border: 0;
                 outline: 0;>
-                      <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
 
                         <div 
                         class="videos"
                         hidden="hidden" 
                         id="video6"
+                        enablejsapi=1;
                         margin: 0;
                     padding: 0;
                     border: 0;
                     outline: 0;>
-                          <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <iframe src="https://www.youtube.com/embed/6KTr7D93w-s?si=gxX8vkXH4J-x0eTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
+                            -->
                             
 </body>
 </html>

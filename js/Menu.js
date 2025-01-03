@@ -79,7 +79,7 @@ class Menu {
     if (menuToggle === 1){
     push();
     rectMode(RIGHT);
-    fill(255,255,255,);
+    fill(255);
     stroke(0);
     rect(menuX - 273.5, 41 , 250, 325);
   

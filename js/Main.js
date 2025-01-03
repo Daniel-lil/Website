@@ -3,6 +3,7 @@ class Main {
   }
   
   displayImages() {
+
     mainTextSize = buttonSizeX/12;
     push();
     background(0);
