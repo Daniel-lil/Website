@@ -207,6 +207,8 @@ function setup() {
     harmonizerLink = createA("", "Max: Reactive Harmonizer", "_blank");
     audioVisualizerLink = createA("", "Max Audio Visualizer", "_blank");
 
+    removeLinks();
+
     createMetaTag();
 
     melancholy = select("#melancholy");
@@ -236,7 +238,7 @@ function setup() {
 
   push();
   cnv = createCanvas(window.innerWidth, window.innerHeight*4);
-  centreCanvas();
+  //centreCanvas();
   cnv.style('display', 'block');
   cnv.style('align-content: center');
   cnv.style('top', '0'); // Position at the top of the viewport
@@ -252,16 +254,20 @@ function draw() {
     removeLinks();
     removeYoutubeLinks();
     titleClass.displayTitle();
+
   } else if (state === `main`) {
     push();
     removeLinks();
     removeYoutubeLinks();
+
     if (width >= verticalThreshold){
       mainClass.displayImages();
+
     }  else if (width < verticalThreshold){
       mainClass.displayImagesVertical();
     }
     menuClass.menu();
+
     pop();
   } 
   
@@ -270,37 +276,75 @@ function draw() {
     removeLinks();
       contactClass.displayContact();
        menuClass.menu();
+
   } else if (state === `drawing`) {
     removeLinks();
     removeYoutubeLinks();
       drawingClass.displayDrawing();
        menuClass.menu();
+
   } else if (state === `music`) {
     removeLinks();
     removeYoutubeLinks();
     musicClass.displayMusic();
        menuClass.menu();
+
   } else if (state === `video`) {
     removeLinks();
       videoClass.displayVideo();
        menuClass.menu();
+
   } else if (state === `cv`) {
     removeLinks();
     removeYoutubeLinks();
       cvClass.displayCV();
        menuClass.menu();
+
   } else if (state === `programming`) {
     removeLinks();
     removeYoutubeLinks();
     programmingClass.displayProgramming();
      menuClass.menu();
+
   }
 }
 
-function windowResized(){
-  let dpr = window.devicePixelRatio;
-  onresize = e => {
-    if(window.devicePixelRatio !== dpr){
+if (state === `CV`) {
+  windowResizedCV();
+} else {
+windowResized();
+}
+
+function windowResizedCV(){
+   let dpr = window.devicePixelRatio;
+   onresize = e => {
+     if(window.devicePixelRatio !== dpr){
+ 
+   resizeCanvas(window.innerWidth, window.innerHeight*4);
+   centreCanvas();
+ 
+   menuClass.menu();
+   menuButtonX = width - 50;
+   menuX = width;
+ 
+   titleX = width/2;
+   titleY = height/16;
+ 
+   cvX = width/2;
+   cvY = height/32;
+ 
+   menudetectx1 = width - 122;
+   menudetectx2 = width - 273;
+ 
+   buttonPlacement();
+ }
+ }
+ }
+ 
+ function windowResized(){
+ // let dpr = window.devicePixelRatio;
+  //onresize = e => {
+   // if(window.devicePixelRatio !== dpr){
 
   resizeCanvas(window.innerWidth, window.innerHeight*4);
   centreCanvas();
@@ -312,17 +356,17 @@ function windowResized(){
   titleX = width/2;
   titleY = height/16;
 
-  //cvX = width/2;
-  //cvY = height/32;
+  cvX = width/2;
+  cvY = height/32;
 
   menudetectx1 = width - 122;
   menudetectx2 = width - 273;
 
   buttonPlacement();
 }
-}
-} 
-                
+//}
+//} 
+
 
   //checks mousepressing for site
 function touchEnded() {
@@ -335,13 +379,13 @@ setTimeout(() => {
         if (mouseY > 42   && mouseY < 90  && menuToggle != 1) {
           setTimeout(() => {
           menuToggle = 1;
-          }, 225)
+          }, 175)
  } 
         else if (mouseX < menuButtonX +125 && mouseX > menuButtonX) {
         if (mouseY > 42  && mouseY < 79  && menuToggle === 1) {
           setTimeout(() => {
             menuToggle = 0;
-            }, 225)
+            }, 175)
         }
       }
     } 

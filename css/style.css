@@ -12,15 +12,16 @@ html {
   padding: 0vh;
   margin: 0;
   background-position-x: fixed;
+
   
+  width: 100vw;
+    height: 400vh; /* Body is the height of the viewport */
   display: grid; /* Set up the grid and justify/align to center */
   justify-content: center;
   align-content: center;
-  height: 400vh; /* Body is the height of the viewport */
-    width: 100vw;
-  min-width: 100vw;
-  min-height: 100vh;
-  
+
+
+
   overflow-x: hidden;
   overflow-y: scroll; /* Hide anything that goes off the window size */
 }
